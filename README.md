@@ -14,15 +14,22 @@ Given a real-time UAV video stream, how can we both localize and classify the mo
 @inproceedings{mandal2020mor,title={Mor-uav: A benchmark dataset and baselines for moving object recognition in uav videos},author={Mandal, Murari and Kumar, Lav Kush and Vipparthi, Santosh Kumar},booktitle={Proceedings of the 28th ACM International Conference on Multimedia},pages={2626--2635},year={2020}}
 
 #Dataset-Link
+[MOR-UAV](https://drive.google.com/file/d/1z6kvIpoRTGTYXe3AG8z2Sik2ut-ApDbM/view?usp=sharing)
 
-#Installation
+# Installation
 1. Clone this repository.
 2. Ensure numpy is installed using pip install numpy --user
 3. In the repository, execute pip install . --user. Note that due to inconsistencies with how tensorflow should be installed, this package does not define a dependency on tensorflow as it will try to install that (which at least on Arch Linux results in an incorrect installation). Please make sure tensorflow is installed as per your systems requirements.
 4. Run python setup.py build_ext --inplace to compile Cython code first.
 
-#Training
+# Training
 MOR_UAVNet can be trained using this train.py script. Note that the train script uses relative imports since it is inside the keras_retinanet package.
 
 Model can be trained on all csv files in --csv_path CSV_PATH folder. Randomly select a video, read continuous frames (1-10)10 (if depth of history frame is 10) frames, calculate temporal median and TDR block features and perform estimation using resnet 50 and retinanet pyramid. Next choose 11th frame with 10 previous history frames ([1:11] ) and perform estimation. At end of each video, randomly select new video, start with depth frames.
+
+# CSV datasets
+The CSV file with annotations should contain one annotation per line. Images with multiple bounding boxes should use one row per bounding box. Note that indexing for pixel values starts at 0. The expected format of each line is:
+path/to/image.jpg,x1,y1,x2,y2,class_name
+
+
 
