@@ -154,3 +154,17 @@ By default the CSV generator will look for images in `visualize/backdoor/csv/` d
 Visualization is stored in `visualize/backdoor/LAYER_NAME/output/`.
 
 
+<h4 align="center" style="text-align: center;">
+  <a href="https://www.youtube.com/watch?v=QiAZ1FiBKEc" target="_blank"><img src="results/youtube.PNG" 
+alt="youtube link" border="1" /></a></br></br>
+ Qualitative results of our method on some of the MOR-UAV videos.
+</h4> </br> </br>
+
+# Contributors
+
+We forked off from [fizyr/keras-retinanet](https://github.com/fizyr/keras-retinanet) tag 0.5.1.    
+Thanks to fizyr/keras-retinanet team.
+
+Lav Kush Kumar          (lavkushkumarmnit@gmail.com)    
+Murari Mandal           (murarimandal.cv@gmail.com)     
+Santosh Kumar Vipparthi (skvipparthi@mnit.ac.in)  
