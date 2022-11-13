@@ -28,7 +28,7 @@ Given a real-time UAV video stream, how can we both localize and classify the mo
 # Training
 MOR_UAVNet can be trained using this train.py script. Note that the train script uses relative imports since it is inside the keras_retinanet package.
 
-Model can be trained on all csv files in '--csv_path CSV_PATH' folder. Randomly select a video, read continuous frames (1-10)10 (if depth of history frame is 10) frames, calculate temporal median and TDR block features and perform estimation using resnet 50 and retinanet pyramid. Next choose 11th frame with 10 previous history frames ([1:11] ) and perform estimation. At end of each video, randomly select new video, start with depth frames.
+Model can be trained on all csv files in `--csv_path CSV_PATH` folder.
 
 ## CSV datasets
 The CSV file with annotations should contain one annotation per line. Images with multiple bounding boxes should use one row per bounding box. Note that indexing for pixel values starts at 0. The expected format of each line is:
