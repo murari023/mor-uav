@@ -10,7 +10,7 @@ Given a real-time UAV video stream, how can we both localize and classify the mo
 # Paper
 [MOR-UAV: A Benchmark Dataset and Baselines for Moving Object Recognition in UAV Videos](https://dl.acm.org/doi/10.1145/3394171.3413934)
 
-#BibTex
+# BibTex
 @inproceedings{mandal2020mor,title={Mor-uav: A benchmark dataset and baselines for moving object recognition in uav videos},author={Mandal, Murari and Kumar, Lav Kush and Vipparthi, Santosh Kumar},booktitle={Proceedings of the 28th ACM International Conference on Multimedia},pages={2626--2635},year={2020}}
 
 # Dataset-Link
